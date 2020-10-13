@@ -1,0 +1,27 @@
+- title: "My Github profile"
+  url: "https://github.com/sanzaru"
+  class: "fab fa-github"
+
+- title: "My apps in the App Store"
+  url: "https://apps.apple.com/us/developer/martin-albrecht/id1479205686"
+  class: "fab fa-apple"
+
+- title: "My stories on Medium"
+  url: "https://medium.com/@sanzaru84"
+  class: "fab fa-medium-m"
+
+- title: "My NPM packages"
+  url: "https://www.npmjs.com/~sanzaru"
+  class: "fab fa-npm"
+
+- title: "My Codepen profile"
+  url: "https://codepen.io/sanzaru/"
+  class: "fab fa-codepen"
+
+- title: "My StackOverflow profile"
+  url: "https://stackoverflow.com/users/2975214/sanzaru84"
+  class: "fab fa-stack-overflow"
+
+- title: "Get in touch"
+  url: "mailto:martin.albrecht@seriousmonkey.de"
+  class: "fa fa-envelope"

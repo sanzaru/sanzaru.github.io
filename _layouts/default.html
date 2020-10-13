@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+
+    {% include styles.html %}
+  </head>
+  <body>
+    <div class="index-wrapper">
+      <div class="content">
+        <div class="container">
+          <section>
+            {{ content }}
+          </section>
+
+          {% include footer.html %}
+        </div>
+      </div>
+    </div>
+
+    {% include scripts.html %}
+  </body>
+</html>

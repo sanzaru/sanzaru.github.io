@@ -1,0 +1,39 @@
+---
+---
+
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.icon-links {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    li {
+        display: inline-block;
+        color: inherit;
+        font-size: 1.8rem;
+        padding: 0 1rem;
+        transition: text-shadow 0.2s ease-in-out;
+
+        &:hover {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        a {
+            display: block;
+        }
+    }
+}
+
+.index-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
