@@ -1,0 +1,42 @@
+@import "vars";
+
+header {
+    .menu {
+        width: $content-with;
+        margin: 0;
+        text-align: right;
+        padding: 20px;
+    }
+}
+
+.content {
+    .menu {
+        text-align: center;
+    }
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+    .active {
+        font-weight: bold;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: inherit;
+            // text-decoration: none;
+        }
+
+        &:not(:last-child):after {
+            content: "-";
+            padding: 0 5px;
+        }
+    }
+}

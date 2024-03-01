@@ -1,0 +1,15 @@
+{
+    "Title": "SimpleToast",
+    "Summary": "SimpleToast is a simple, lightweight, flexible and easy to use library to show toasts / popup notifications inside iOS or macOS applications in SwiftUI. Because of the flexibility to show any content it is also possible to use the library for showing simple modals.",
+    "Image": "/images/projects/simpletoast.png",
+    "Technologies": [
+        "Swift", "SPM"
+    ],
+    "URL": [
+        {
+            "href": "https://github.com/sanzaru/SimpleToast",
+            "title": "Github",
+            "type": "github"
+        }
+    ]
+}

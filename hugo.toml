@@ -1,0 +1,7 @@
+baseURL = 'https://sanzaru.github.io/'
+languageCode = 'en-us'
+title = 'Martin Albrecht | iOS Developer | Let me build an app for you'
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.goldmark.renderer]
+    unsafe = true

@@ -1,0 +1,40 @@
+<div class="project">
+    <div class="project-image">
+    {{ if .Image }}
+        <img src="{{ .Image }}">
+    {{ end }}
+    </div>
+
+    <div class="project-description {{ if not .Image }}indent{{ end }}">
+        <h2>{{ .Title }}</h2>
+        {{ if .Summary }}
+            <p>{{ .Summary }}</p>
+        {{ end }}
+
+        {{ if .Technologies }}
+            <div class="technologies">
+                <small>
+                    Technologies: {{ range $i, $e := .Technologies }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
+                </small>
+            </div>
+        {{ end }}
+
+        {{ if .URL }}
+            <div class="project-link">
+                {{ range $url := .URL }}
+                    <a href="{{ .href }}" target="_blank">
+                        {{ if eq $url.type "github" }}
+                            <i class="fa-brands fa-github"></i>
+                        {{ else if eq $url.type "apple" }}
+                            <i class="fa-brands fa-apple"></i>
+                        {{ else }}
+                            <i class="fa-solid fa-link"></i>
+                        {{ end }}
+
+                        {{ $url.title }}
+                    </a>
+                {{ end }}
+            </div>
+        {{ end }}
+    </div>
+</div>

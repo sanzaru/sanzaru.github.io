@@ -1,0 +1,15 @@
+{
+    "Title": "IBM 1401 Emulator",
+    "Summary": "A simple emulator for the IBM 1401 for Mac computers written in Swift.",
+    "Image": "https://camo.githubusercontent.com/dccd8e0cb43314568c57f57029619b1f3090fb4b8fd84163a1fcedac146f8c6a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f632f63622f42524c36312d49424d5f313430312e6a7067",
+    "Technologies": [
+        "Swift", "SPM"
+    ],
+    "URL": [
+        {
+            "href": "https://github.com/sanzaru/ibm-1401",
+            "title": "Github",
+            "type": "github"
+        }
+    ]
+}

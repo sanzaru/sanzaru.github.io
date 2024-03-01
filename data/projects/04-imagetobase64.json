@@ -1,0 +1,24 @@
+{
+    "Title": "Image To Base64 Encoder",
+    "Summary": "ImageToBase64 is a simple, free to use image encoding utility that lets you convert your local image files to base64 code for use in HTML image tags, E-Mails, etc.",
+    "Image": "/images/projects/imagetobase64.png",
+    "Technologies": [
+        "UIKit", "SVGKit", "Swiftlint"
+    ],
+    "URL": [
+        {
+            "href": "https://imagetobase64.seriousmonkey.de/",
+            "title": "Website"
+        },
+        {
+            "href": "https://apps.apple.com/us/app/image-to-base64-encoder/id1479205687",
+            "title": "Mac App Store",
+            "type": "apple"
+        },
+        {
+            "href": "https://github.com/sanzaru/image-to-base64",
+            "title": "Github",
+            "type": "github"
+        }
+    ]
+}

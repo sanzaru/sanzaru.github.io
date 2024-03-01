@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="projects">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    {{ range $.Site.Data.projects }}
+        {{ partial "project.html" . }}
+    {{ end }}
+</div>
+{{ end }}

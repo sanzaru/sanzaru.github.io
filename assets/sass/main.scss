@@ -1,0 +1,63 @@
+@import "vars";
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    align-self: flex-start;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main {
+    //align-self: flex-end;
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    align-self: flex-end;
+    text-align: center;
+    padding: 10px 0;
+}
+
+a {
+    &, &:visited, &:hover, &:focus {
+        color: inherit;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+@import "menu";
+@import "content";
+@import "tooltip";

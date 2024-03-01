@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+
+<link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+
+{{ $sass := resources.Get "sass/main.scss" }}
+{{ $style := $sass | resources.ToCSS | resources.Fingerprint | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+<link rel="stylesheet" href="/fontawesome/css/fontawesome.css">
+<link rel="stylesheet" href="/fontawesome/css/brands.css">
+<link rel="stylesheet" href="/fontawesome/css/solid.css">
