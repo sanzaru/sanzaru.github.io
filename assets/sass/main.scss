@@ -45,19 +45,8 @@ a {
     }
 }
 
-.text-center {
-    text-align: center;
-}
-
-.text-muted {
-    color: #6c757d !important;
-}
-
-.lead {
-    font-size: 1.25rem;
-    font-weight: 300;
-}
-
+@import "text";
 @import "menu";
 @import "content";
 @import "tooltip";
+@import "projects";
