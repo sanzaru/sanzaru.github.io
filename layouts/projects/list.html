@@ -1,10 +1,20 @@
 {{ define "main" }}
 <div class="projects">
     <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    {{ if .Content }}
+    <p class="intro">
+        {{ .Content }}
+    </p>
+    {{ end }}
 
     {{ range $.Site.Data.projects }}
         {{ partial "project.html" . }}
     {{ end }}
+
+    <div class="text-center">
+        <a class="black-button" href="https://github.com/sanzaru?tab=repositories" target="_blank">
+            ... my Github repository for more stuff
+        </a>
+    </div>
 </div>
 {{ end }}

@@ -40,3 +40,11 @@ header {
         }
     }
 }
+
+.home .menu {
+    margin: 30px 0;
+
+    a {
+        @include button-black();
+    }
+}

@@ -45,8 +45,17 @@ a {
     }
 }
 
+@mixin button-black {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
 @import "text";
 @import "menu";
 @import "content";
+@import "icon-links";
 @import "tooltip";
 @import "projects";
+@import "about";

@@ -1,8 +1,13 @@
 <ul class="menu">
+    {{ if not .IsHome}}
     <li>
         <a href="/">Home</a>
     </li>
+    {{ end }}
     <li>
-        <a href="/projects"{{ if eq .Section "projects" }}class="active"{{end}}>Projects</a>
+        <a href="/about"{{ if eq .Section "about" }}class="active"{{end}}>About Me</a>
+    </li>
+    <li>
+        <a href="/projects"{{ if eq .Section "projects" }}class="active"{{end}}>My Projects</a>
     </li>
 </ul>

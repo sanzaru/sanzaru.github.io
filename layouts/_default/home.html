@@ -1,7 +1,9 @@
 {{ define "main" }}
   <div class="content home">
     {{ .Content }}
-    <hr>
+
     {{ partial "menu.html" . }}
+    <hr>
+    {{ partial "icon-links.html" . }}
   </div>
 {{ end }}

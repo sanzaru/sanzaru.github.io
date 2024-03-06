@@ -1,0 +1,29 @@
+.icon-links {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin: 10px 0;
+            display: inline-block;
+            // font-size: 1.8rem;
+            // padding: 0 1rem;
+            padding: 0 0.5rem;
+            transition: text-shadow 0.2s ease-in-out;
+            color: initial;
+
+            i {
+                color: initial;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            &:hover {
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}
