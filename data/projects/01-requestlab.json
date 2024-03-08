@@ -1,0 +1,19 @@
+{
+    "Title": "Requestlab",
+    "Summary": "RequestLab is a simple, free, multi-platform tool designed for HTTP API development, debugging, and testing.",
+    "Image": "https://requestlab.seriousmonkey.de/images/combined.png",
+    "Technologies": [
+        "SwiftUI", "SPM", "Realm Swift", "Swiftlint"
+    ],
+    "URL": [
+        {
+            "href": "https://requestlab.seriousmonkey.de",
+            "title": "Website"
+        },
+        {
+            "href": "https://apps.apple.com/us/app/requestlab/id6477221079",
+            "title": "App Store",
+            "type": "apple"
+        }
+    ]
+}
