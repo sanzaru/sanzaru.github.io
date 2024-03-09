@@ -1,11 +1,18 @@
 .about {
     padding: 0 20px;
+
     img {
         float: left;
         margin-right: 1.5rem;
         margin-bottom: 1.5rem;
         max-height: 200px;
         border-radius: 50%;
+
+        @media (max-width: 600px) {
+            max-height: 25vw;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
     }
 
     p {
@@ -15,6 +22,10 @@
             span {
                 font-size: 2.5rem;
                 font-weight: bold;
+            }
+
+            @media (max-width: 600px) {
+                margin-top: 30px;
             }
         }
     }
