@@ -1,5 +1,6 @@
 {
     "Title": "ThreeT - SwiftUI",
+    "Type": "app",
     "Summary": "ThreeT or 3T is a simple implementation of the famous board game Tic-Tac-Toe (a.k.a. Xs and Os or noughts and crosses) in SwiftUI, based on an old text based implementation I wrote some time ago.",
     "Image": "https://threet.seriousmonkey.de/static/media/app-icon.ed36851c.png",
     "Technologies": [

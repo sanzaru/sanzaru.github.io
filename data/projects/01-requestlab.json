@@ -1,5 +1,6 @@
 {
-    "Title": "Requestlab",
+    "Title": "RequestLab",
+    "Type": "app",
     "Summary": "RequestLab is a simple, free, multi-platform tool designed for HTTP API development, debugging, and testing.",
     "Image": "https://requestlab.seriousmonkey.de/images/combined.png",
     "Technologies": [

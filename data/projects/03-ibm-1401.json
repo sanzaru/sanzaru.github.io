@@ -1,5 +1,6 @@
 {
     "Title": "IBM 1401 Emulator",
+    "Type": "",
     "Summary": "A simple emulator for the IBM 1401 for Mac computers written in Swift.",
     "Image": "/images/projects/ibm-1401.jpg",
     "Technologies": [
