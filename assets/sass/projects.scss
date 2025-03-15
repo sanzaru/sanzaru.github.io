@@ -9,22 +9,30 @@
     h1 {
         margin: 0;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .intro {
         font-size: 0.9rem;
+        margin-bottom: 30px;
     }
 
     .project {
         display: flex;
-        padding: 10px 0;
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
-        margin-bottom: 30px;
-        margin-top: 30px;
+        margin-bottom: 80px;
+        padding: 20px;
+        border-radius: 10px;
 
-        @include backgroundBlur;
+        @media (prefers-color-scheme: light) {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            background: rgba(255, 255, 255, 0.1);
+        }
 
         h2 {
             margin: 0;
@@ -39,6 +47,7 @@
             width: 30%;
             flex-shrink: 0;
             min-width: 200px;
+            max-width: 300px;
 
             img {
                 width: auto;

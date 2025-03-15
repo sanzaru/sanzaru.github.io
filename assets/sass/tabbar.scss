@@ -1,0 +1,36 @@
+@import "blur";
+
+.tabbar {
+    position: sticky;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        @include backgroundBlur;
+        text-decoration: none;
+        background: #363434c3;
+        padding: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: all .2s ease-in-out;
+
+        &:first-of-type {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        &:last-of-type {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        &.selected {
+            background: #b9b2b2e5;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+    }
+}

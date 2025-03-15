@@ -1,5 +1,19 @@
 {{ define "main" }}
 <div class="projects">
+    <div class="tabbar top">
+        <a href="#apps" class="selected" onClick="toggleSelect(this)">
+            Apps
+        </a>
+
+        <a href="#libs" onClick="toggleSelect(this)">
+            Libraries
+        </a>
+
+        <a href="#misc" onClick="toggleSelect(this)">
+            Miscellaneous
+        </a>
+    </div>
+
     <h1>{{ .Title }}</h1>
     {{ if .Content }}
     <p class="intro">
@@ -7,7 +21,23 @@
     </p>
     {{ end }}
 
+    {{ $projects := slice }}
     {{ range $.Site.Data.projects }}
+        {{ $projects = $projects | append .}}
+    {{ end }}
+
+    <h1 id="apps">Apps</h1>
+    {{ range where $projects "Type" "app" }}
+        {{ partial "project.html" . }}
+    {{ end }}
+
+    <h1 id="libs">Libraries</h1>
+    {{ range where $projects "Type" "lib" }}
+        {{ partial "project.html" . }}
+    {{ end }}
+
+    <h1 id="misc">Miscellaneous</h1>
+    {{ range where $projects "Type" "" }}
         {{ partial "project.html" . }}
     {{ end }}
 
@@ -17,4 +47,14 @@
         </a>
     </div>
 </div>
+<script>
+    const toggleSelect = (element) => {
+        let selected = document.querySelector('.tabbar a.selected')
+        if (selected) {
+            selected.removeAttribute('class')
+        }
+
+        element.setAttribute('class', 'selected')
+    }
+</script>
 {{ end }}
