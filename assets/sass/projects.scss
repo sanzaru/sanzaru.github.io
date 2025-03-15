@@ -1,3 +1,5 @@
+@import "blur";
+
 .projects {
     max-width: 800px;
     margin: 0 auto;
@@ -19,7 +21,10 @@
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+        @include backgroundBlur;
 
         h2 {
             margin: 0;

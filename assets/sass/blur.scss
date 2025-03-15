@@ -1,0 +1,12 @@
+@import "vars";
+
+@mixin backgroundBlur($padding: 10px, $blur: 15px) {
+    background: $menu-background;
+    padding: $padding;
+    border-radius: 10px;
+    backdrop-filter: blur($blur);
+
+    @media (prefers-color-scheme: dark) {
+        background: $menu-background-dark;
+    }
+}
