@@ -1,13 +1,22 @@
-<ul class="menu">
+<ul class="menu {{ if .IsHome}}home{{ end }}">
     {{ if not .IsHome}}
     <li>
         <a href="/">Home</a>
     </li>
     {{ end }}
     <li>
-        <a href="/about"{{ if eq .Section "about" }}class="active"{{end}}>About Me</a>
+        <a href="/about"{{ if eq .Section "about" }}class="active"{{end}}>
+            {{ if .IsHome}}<i class="fa-regular fa-file-lines"></i>{{ end }} About Me
+        </a>
     </li>
     <li>
-        <a href="/projects"{{ if eq .Section "projects" }}class="active"{{end}}>My Projects</a>
+        <a href="/projects"{{ if eq .Section "projects" }}class="active"{{end}}>
+            {{ if .IsHome}}<i class="fa-solid fa-laptop-code"></i>{{ end }} My Projects
+        </a>
+    </li>
+    <li>
+        <a href="https://medium.com/@sanzaru84" target="_blank">
+            {{ if .IsHome}}<i class="fa-solid fa-pen-fancy"></i>{{ end }} Writing
+        </a>
     </li>
 </ul>
